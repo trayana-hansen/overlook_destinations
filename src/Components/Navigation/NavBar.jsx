@@ -6,9 +6,11 @@ const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <nav className="navigation">
-      <a href="/" className="brand-name">
-        Brand Name
-      </a>
+      <img
+        className="brand-name"
+        src={require("../../Assets/Images/logo.png")}
+        alt="logo"
+      />
       <button
         className="hamburger"
         onClick={() => {

@@ -1,0 +1,58 @@
+@use "../../../Assets/Colors/colors" as c;
+
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0.5rem 0rem;
+
+  h2 {
+    font-size: 1em;
+    color: c.$dark-grey;
+    font-weight: 500;
+  }
+
+  .footerNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    ul {
+      display: flex;
+
+      li {
+        list-style: none;
+        margin: 0.5rem;
+
+        a {
+          text-decoration: none;
+          color: c.$dark-grey;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerContainer {
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+
+    h2 {
+      padding: 1rem;
+    }
+
+    .footerNav {
+      ul {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+      }
+    }
+  }
+}

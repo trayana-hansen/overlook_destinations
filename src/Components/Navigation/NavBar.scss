@@ -1,6 +1,6 @@
 @use "../../Assets//Colors/colors" as c;
 .navigation {
-  height: 60px;
+  height: 100px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -22,16 +22,9 @@
     right: 25px;
     transform: translateY(-50%);
     display: none;
-
-    &:hover {
-      background-color: c.$red;
-    }
   }
 
   .brand-name {
-    text-decoration: none;
-    color: c.$white;
-    font-size: 1.3rem;
     margin-left: 1rem;
   }
   .navigation-menu {
@@ -67,7 +60,7 @@
       ul {
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 100px;
         left: 0;
         width: 100%;
         height: calc(100vh - 60px);
