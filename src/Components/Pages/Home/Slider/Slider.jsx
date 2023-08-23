@@ -1,7 +1,7 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
-import "./Slider.scss"
+import "./Slider.scss";
 
 const handleDragStart = (e) => e.preventDefault();
 
@@ -10,31 +10,41 @@ const items = [
     src={require("../../../../Assets/Images/center-square-wroclaw.jpg")}
     onDragStart={handleDragStart}
     alt="center-square-wroclaw"
-    className="sliderImg"
   />,
   <img
     src={require("../../../../Assets/Images/city-houses-reykjavik.jpg")}
     onDragStart={handleDragStart}
     alt="city-houses-reykjavik"
-    className="sliderImg"
   />,
   <img
     src={require("../../../../Assets/Images/fishmarket-hamborg.jpg")}
     onDragStart={handleDragStart}
     alt="fishmarket-hamborg"
-    className="sliderImg"
   />,
   <img
     src={require("../../../../Assets/Images/frankfurt-skyline-germany.jpg")}
     onDragStart={handleDragStart}
     alt="frankfurt-skyline-germany"
-    className="sliderImg"
   />,
   <img
     src={require("../../../../Assets/Images/gdansk-center-church-poland.jpg")}
     onDragStart={handleDragStart}
     alt="gdansk-center-church-poland"
-    className="sliderImg"
+  />,
+  <img
+    src={require("../../../../Assets/Images/harbour-gothenburg.jpg")}
+    onDragStart={handleDragStart}
+    alt="harbour-gothenburg"
+  />,
+  <img
+    src={require("../../../../Assets/Images/harbour-tromso.jpg")}
+    onDragStart={handleDragStart}
+    alt="harbour-tromso"
+  />,
+  <img
+    src={require("../../../../Assets/Images/hjuldamper-silkeborg.jpg")}
+    onDragStart={handleDragStart}
+    alt="hjuldamper-silkeborg"
   />,
 ];
 
