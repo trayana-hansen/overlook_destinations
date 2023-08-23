@@ -23,13 +23,13 @@ const Footer = () => {
                 <Link to="/">Forside</Link>{" "}
               </li>
               <li>
-                <a href="/destinations">Hoteller & Destinationer</a>
+                <a href="/destinationer">Hoteller & Destinationer</a>
               </li>
               <li>
-                <a href="/rooms">Værsler</a>
+                <a href="/vaerelser">Værelser</a>
               </li>
               <li>
-                <a href="/reservations">Reservation</a>
+                <a href="/reservation">Reservation</a>
               </li>
               <li>
                 <a href="/login">Login</a>

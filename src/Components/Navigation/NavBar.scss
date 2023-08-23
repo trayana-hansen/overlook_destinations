@@ -8,6 +8,7 @@
   padding: 0.5rem 0rem;
   background-color: c.$black;
   color: c.$white;
+  z-index: 9999;
 
   .hamburger {
     border: 0;
@@ -16,7 +17,6 @@
     padding: 0.5rem;
     border-radius: 50%;
     background-color: c.$white;
-    cursor: pointer;
     position: absolute;
     top: 50%;
     right: 25px;
@@ -65,7 +65,7 @@
         width: 100%;
         height: calc(100vh - 60px);
         background-color: c.$black;
-        border-top: 1px solid c.$white;
+
         display: none;
 
         li {

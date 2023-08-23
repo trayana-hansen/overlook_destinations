@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.scss";
 
-const Navbar = () => {
+const NavBar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <nav className="navigation">
@@ -18,31 +18,31 @@ const Navbar = () => {
         }}
       >
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
             id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></g>
           <g id="SVGRepo_iconCarrier">
             {" "}
             <path
               d="M4 18L20 18"
               stroke="#000000"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             ></path>{" "}
             <path
               d="M4 12L20 12"
               stroke="#000000"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             ></path>{" "}
             <path
               d="M4 6L20 6"
               stroke="#000000"
-              stroke-width="2"
-              stroke-linecap="round"
+              strokeWidth="2"
+              strokeLinecap="round"
             ></path>{" "}
           </g>
         </svg>
@@ -54,33 +54,23 @@ const Navbar = () => {
       >
         <ul>
           <li>
-            <NavLink to="/" className="active">
-              FORSIDE
-            </NavLink>
+            <NavLink to="/">FORSIDE</NavLink>
           </li>
           <li>
-            <NavLink to="/destinations" className="active">
-              HOTELLER OG DESTINATIONER
-            </NavLink>
+            <NavLink to="/destinationer">HOTELLER OG DESTINATIONER</NavLink>
           </li>
           <li>
-            <NavLink to="/rooms" className="active">
-              VÆRELSER
-            </NavLink>
+            <NavLink to="/vaerelser">VÆRELSER</NavLink>
           </li>
           <li>
-            <NavLink to="/reservations" className="active">
-              RESERVATION
-            </NavLink>
+            <NavLink to="/reservation">RESERVATION</NavLink>
           </li>
           <li>
-            <NavLink to="/login" className="active">
-              LOGIN
-            </NavLink>
+            <NavLink to="/login">LOGIN</NavLink>
           </li>
         </ul>
       </div>
     </nav>
   );
 };
-export default Navbar;
+export default NavBar;
