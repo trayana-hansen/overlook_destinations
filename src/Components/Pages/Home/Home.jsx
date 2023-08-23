@@ -1,5 +1,7 @@
 import React from "react";
 import "./Home.scss";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Home = () => {
   return (

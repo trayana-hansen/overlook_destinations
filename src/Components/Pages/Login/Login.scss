@@ -1,3 +1,6 @@
+@use "../../../Assets/Colors/colors" as c;
+
 .loginWrapper {
-  background-color: black;
+  background-color: c.$light-grey;
+  color: c.$white;
 }
