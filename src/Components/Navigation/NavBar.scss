@@ -65,11 +65,9 @@
         width: 100%;
         height: calc(100vh - 60px);
         background-color: c.$black;
-
         display: none;
 
         li {
-          // centers link text and strips off margin
           text-align: center;
           margin: 0;
 
