@@ -58,6 +58,8 @@ const Slider = () => {
       disableDotsControls="true"
       infinite="true"
       keyboardNavigation="true"
+      disableButtonsControls="true"
+      animationDuration="3000"
       items={items}
     />
   );
