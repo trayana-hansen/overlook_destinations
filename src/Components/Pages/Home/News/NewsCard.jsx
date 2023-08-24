@@ -22,15 +22,16 @@ const NewsCard = () => {
   return (
     <div className="newsContainer">
       {news &&
-        news.slice(-3).map((data) => (
-          <figure className="productCard" key={data.id}>
+        news.slice(1, -3).map((data) => (
+          <div className="newsCard" key={data.id}>
             <img
               src={`http://localhost:4000/images/${data.image.filename}`}
               alt="img_news"
             />
-            <h2>{data.title}</h2>
+
+            <h3>{data.title}</h3>
             <p>{data.teaser}</p>
-          </figure>
+          </div>
         ))}
     </div>
   );

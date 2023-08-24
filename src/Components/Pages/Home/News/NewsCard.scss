@@ -1,29 +1,47 @@
-.containerGallery {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+@use "../../../../Assets//Colors//colors" as c;
 
-	.newsCard {
-	  text-align: center;
-	  padding: 0 5em 0 5em;
+.newsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+  gap: 2rem;
 
-	  h2 {
-		font-size: 1.2em;
-		font-family: "Open-sans", sans-serif;
-		margin: 0;
-		font-weight: 500;
-		text-transform: uppercase;
-	  }
+  .newsCard {
+    overflow: hidden;
+    border-radius: 30px;
+    background-color: c.$white;
+    box-shadow: 10px 10px 8px c.$dark-grey;
 
-	  p {
-		font-family: "Open-sans", sans-serif;
-		margin-top: 0.5em;
-		font-size: 0.9em;
-		font-weight: 300;
-		line-height: 150%;
-	  }
-	  img {
-		border-radius: 50%;
-		max-width: 100%;
-	  }
-	}
+    img {
+      margin: auto;
+
+      height: auto;
+      max-height: 100%;
+
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-family: "Open-sans", sans-serif;
+      margin: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    p {
+      margin: 1rem;
+      font-size: 0.9rem;
+    }
   }
+}
+@media (max-width: 900px) {
+  .newsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .newsContainer {
+    grid-template-columns: 1fr;
+  }
+}

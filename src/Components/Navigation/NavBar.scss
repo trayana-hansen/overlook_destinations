@@ -26,6 +26,7 @@
 
   .brand-name {
     margin-left: 1rem;
+    width: 20rem;
   }
   .navigation-menu {
     margin-left: auto;
@@ -49,6 +50,7 @@
           display: block;
           width: 100%;
           color: c.$white;
+          font-size: 1.7rem;
 
           &:hover {
             color: c.$red;
