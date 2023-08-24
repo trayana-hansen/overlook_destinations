@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <div>
       <Slider />
+      <h2>Sidste nyt</h2>
       <NewsCard />
     </div>
   );

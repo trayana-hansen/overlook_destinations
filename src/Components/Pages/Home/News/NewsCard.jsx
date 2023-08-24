@@ -20,20 +20,22 @@ const NewsCard = () => {
   }, [setNews]);
 
   return (
-    <div className="newsContainer">
-      {news &&
-        news.slice(1, -3).map((data) => (
-          <div className="newsCard" key={data.id}>
-            <img
-              src={`http://localhost:4000/images/${data.image.filename}`}
-              alt="img_news"
-            />
+    <>
+      <div className="newsContainer">
+        {news &&
+          news.slice(0, 6).map((data) => (
+            <div className="newsCard" key={data.id}>
+              <img
+                src={`http://localhost:4000/images/${data.image.filename}`}
+                alt="img_news"
+              />
 
-            <h3>{data.title}</h3>
-            <p>{data.teaser}</p>
-          </div>
-        ))}
-    </div>
+              <h3>{data.title}</h3>
+              <p>{data.teaser}</p>
+            </div>
+          ))}
+      </div>
+    </>
   );
 };
 
