@@ -1,15 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { React, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const NotFound = () => {
-  return (
-    <>
-      <h1>Siden blev ikke fundet</h1>
-      <p>
-        <Link to="/">Gå til forsiden</Link>
-      </p>
-    </>
-  );
+  const navigate = useNavigate();
+  useEffect(() => {
+    setTimeout(() => {
+      navigate("/");
+    }, 2000);
+  }, []);
+  return <h1>Siden blev ikke fundet</h1>;
 };
 
 export default NotFound;

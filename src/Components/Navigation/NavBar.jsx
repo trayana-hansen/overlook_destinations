@@ -59,19 +59,54 @@ const NavBar = () => {
         >
           <ul>
             <li>
-              <NavLink to="/">FORSIDE</NavLink>
+              <NavLink
+                to="/"
+                style={({ isActive }) => ({
+                  color: isActive ? "red" : "white",
+                })}
+              >
+                FORSIDE
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/destinationer">HOTELLER OG DESTINATIONER</NavLink>
+              <NavLink
+                to="/destinationer"
+                style={({ isActive }) => ({
+                  color: isActive ? "red" : "white",
+                })}
+              >
+                HOTELLER OG DESTINATIONER
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/vaerelser">VÆRELSER</NavLink>
+              <NavLink
+                to="/vaerelser"
+                style={({ isActive }) => ({
+                  color: isActive ? "red" : "white",
+                })}
+              >
+                VÆRELSER
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/reservation">RESERVATION</NavLink>
+              <NavLink
+                to="/reservation"
+                style={({ isActive }) => ({
+                  color: isActive ? "red" : "white",
+                })}
+              >
+                RESERVATION
+              </NavLink>
             </li>
             <li>
-              <NavLink to="/login">LOGIN</NavLink>
+              <NavLink
+                to="/login"
+                style={({ isActive }) => ({
+                  color: isActive ? "red" : "white",
+                })}
+              >
+                LOGIN
+              </NavLink>
             </li>
           </ul>
         </div>

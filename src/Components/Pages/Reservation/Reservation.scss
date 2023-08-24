@@ -1,0 +1,50 @@
+h1 {
+  padding: 1rem 3rem;
+}
+
+.reservationForm {
+  label {
+    padding-top: 1rem;
+  }
+  width: 500px;
+  padding-left: 3rem;
+
+  p {
+    font-size: 1rem;
+  }
+
+  #hotel {
+    width: 26em;
+    height: 1.9em;
+    margin: 1rem 0;
+  }
+
+  #room {
+    width: 14em;
+    height: 1.9em;
+    margin: 1rem 0;
+  }
+
+  #people {
+    width: 11em;
+    height: 1.9em;
+    margin: 1rem;
+    margin-left: 1rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"] {
+    margin-right: 1rem;
+    margin-top: 1rem;
+    display: block;
+	width: 26em;
+	height: 1.9em;
+
+}
+}

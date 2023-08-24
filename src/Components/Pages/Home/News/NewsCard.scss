@@ -5,6 +5,7 @@
   grid-template-columns: repeat(3, 1fr);
   padding: 1rem;
   gap: 2rem;
+  padding: 1rem 4rem;
 
   .newsCard {
     overflow: hidden;
@@ -37,11 +38,13 @@
 @media (max-width: 900px) {
   .newsContainer {
     grid-template-columns: repeat(2, 1fr);
+    padding: 2rem;
   }
 }
 
 @media (max-width: 600px) {
   .newsContainer {
     grid-template-columns: 1fr;
+    padding: 0;
   }
 }
