@@ -11,14 +11,22 @@ import NotFound from "../Pages/NotFound/NotFound";
 const AppRouter = () => {
   return (
     <Routes>
+      {/* Defining the home page of the website */}
       <Route index element={<Home />} />
+
+        {/* Route to destinations page */}
       <Route path="/destinationer">
+          {/* Nested routing */}
         <Route index element={<Destinations />} />
         <Route path=":id" element={<Country />} />
       </Route>
+
+        {/* Routes to rooms, reservations and login */}
       <Route path="/vaerelser" element={<Rooms />} />
       <Route path="/reservation" element={<Reservation />} />
       <Route path="/login" element={<Login />} />
+
+        {/* Routing to a 404 page */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

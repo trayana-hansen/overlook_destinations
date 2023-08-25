@@ -3,15 +3,19 @@ import { NavLink, Outlet } from "react-router-dom";
 import "./NavBar.scss";
 
 const NavBar = () => {
+    {/* Stting up the variable to handle the state of mobile menu */}
   const [isNavExpanded, setIsNavExpanded] = useState(false);
   return (
     <>
+      {/* Start of the navigation component */}
       <nav className="navigation">
+          {/* Logo */}
         <img
           className="brand-name"
           src={require("../../Assets/Images/logo.png")}
           alt="logo"
         />
+          {/* The button to act like a hamburger menu clickable icon with an onclick event from useState hook */}
         <button
           className="hamburger"
           onClick={() => {
@@ -52,6 +56,7 @@ const NavBar = () => {
             </g>
           </svg>
         </button>
+          {/* Menu changing state depending on screen size */}
         <div
           className={
             isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
@@ -59,6 +64,7 @@ const NavBar = () => {
         >
           <ul>
             <li>
+                {/* Navlinks for internal navigation, changing color based on active/inactive state */}
               <NavLink
                 to="/"
                 style={({ isActive }) => ({
@@ -111,6 +117,8 @@ const NavBar = () => {
           </ul>
         </div>
       </nav>
+
+        {/* Outlet to handle subrouting */}
       <Outlet />
     </>
   );
