@@ -8,6 +8,7 @@ import Destinations from "../Pages/Destinations/Destinations";
 import Country from "../Pages/Destinations/Country/Country";
 import NotFound from "../Pages/NotFound/NotFound";
 
+/* Creating a react component */
 const AppRouter = () => {
   return (
     <Routes>
@@ -31,5 +32,5 @@ const AppRouter = () => {
     </Routes>
   );
 };
-
+/* Exporting the component to be reused*/
 export default AppRouter;
