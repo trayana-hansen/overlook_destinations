@@ -8,6 +8,16 @@
   padding: 1rem 4rem;
 
   .newsCard {
+    &:hover {
+      h3 {
+        color: c.$red;
+        font-weight: bold;
+      }
+      p {
+        opacity: 1;
+        transform: translateY(-10px);
+      }
+    }
     overflow: hidden;
     border-radius: 5px;
     background-color: c.$white;
@@ -32,9 +42,14 @@
     p {
       margin: 1rem;
       font-size: 0.9rem;
+      text-align: center;
+      opacity: 0;
+      transition: 0.6s;
+      transition-property: opacity, transform;
     }
   }
 }
+
 @media (max-width: 900px) {
   .newsContainer {
     grid-template-columns: repeat(2, 1fr);
@@ -45,6 +60,6 @@
 @media (max-width: 600px) {
   .newsContainer {
     grid-template-columns: 1fr;
-    padding: 0;
+    padding: 1rem;
   }
 }
