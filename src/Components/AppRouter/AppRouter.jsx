@@ -7,6 +7,8 @@ import Rooms from "../Pages/Rooms/Rooms";
 import Destinations from "../Pages/Destinations/Destinations";
 import Country from "../Pages/Destinations/Country/Country";
 import NotFound from "../Pages/NotFound/NotFound";
+import City from "../Pages/Destinations/City/City";
+import Hotel from "../Pages/Destinations/Hotel/Hotel";
 
 /* Creating a react component */
 const AppRouter = () => {
@@ -15,19 +17,21 @@ const AppRouter = () => {
       {/* Defining the home page of the website */}
       <Route index element={<Home />} />
 
-        {/* Route to destinations page */}
-      <Route path="/destinationer">
-          {/* Nested routing */}
-        <Route index element={<Destinations />} />
-        <Route path=":id" element={<Country />} />
+      {/* Route to destinations page */}
+      <Route path="/destinationer" element={<Destinations />}>
+        {/* Nested routing */}
+        <Route path="" exact element={<Country />} />
+        <Route path=":destinationer" element={<Country />} />
+        <Route path=":by" element={<City />} />
+        <Route path=":by/:hotel" element={<Hotel />} />
       </Route>
 
-        {/* Routes to rooms, reservations and login */}
+      {/* Routes to rooms, reservations and login */}
       <Route path="/vaerelser" element={<Rooms />} />
       <Route path="/reservation" element={<Reservation />} />
       <Route path="/login" element={<Login />} />
 
-        {/* Routing to a 404 page */}
+      {/* Routing to a 404 page */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
